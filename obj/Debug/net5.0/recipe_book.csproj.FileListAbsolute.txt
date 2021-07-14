@@ -1,0 +1,16 @@
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\bin\Debug\net5.0\recipe_book.exe
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\bin\Debug\net5.0\recipe_book.deps.json
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\bin\Debug\net5.0\recipe_book.runtimeconfig.json
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\bin\Debug\net5.0\recipe_book.runtimeconfig.dev.json
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\bin\Debug\net5.0\recipe_book.dll
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\bin\Debug\net5.0\ref\recipe_book.dll
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\bin\Debug\net5.0\recipe_book.pdb
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.csprojAssemblyReference.cache
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.AssemblyInfoInputs.cache
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.AssemblyInfo.cs
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.csproj.CoreCompileInputs.cache
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.dll
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\ref\recipe_book.dll
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.pdb
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.genruntimeconfig.cache
