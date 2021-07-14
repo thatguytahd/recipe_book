@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book\\recipe_book.csproj": {}
+    "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book\\recipe_book.csproj": {
+    "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book\\recipe_book.csproj",
+        "projectUniqueName": "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book.csproj",
         "projectName": "recipe_book",
-        "projectPath": "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book\\recipe_book.csproj",
+        "projectPath": "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book.csproj",
         "packagesPath": "C:\\Users\\Todd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book\\obj\\",
+        "outputPath": "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
