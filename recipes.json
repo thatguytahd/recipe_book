@@ -1,0 +1,69 @@
+{
+  "Recipe": [
+    {
+      "Name": "Bacon Chocolate Chip Cookies",
+      "Ingredients": [
+        {
+          "Quantity": "3/4 Cup",
+          "Name": "Softened Butter"
+        },
+        {
+          "Quantity": "1/4 Cup",
+          "Name": "Bacon Fat"
+        },
+        {
+          "Quantity": "1 Cup",
+          "Name": "Packed Brown Sugar"
+        },
+        {
+          "Quantity": "1/2 Cup",
+          "Name": "Sugar"
+        },
+        {
+          "Quantity": "2",
+          "Name": "Eggs"
+        },
+        {
+          "Quantity": "1 Teaspoon",
+          "Name": "Vanilla Extract"
+        },
+        {
+          "Quantity": "1 Teaspoon",
+          "Name": "Baking Soda"
+        },
+        {
+          "Quantity": "2 1/4 Cups",
+          "Name": "Flour"
+        },
+        {
+          "Quantity": "1 Cup",
+          "Name": "Semi-Sweet Chocolate Chips"
+        },
+        {
+          "Quantity": "1/2 Cup",
+          "Name": "Milk Chocolate Chips"
+        },
+        {
+          "Quantity": "8-10 Ounces",
+          "Name": "Bacon"
+        }
+      ],
+      "Steps": [
+        "First you have to cook your bacon until it's crispy.",
+        "Pour bacon grease it into a glass container and allow to cool completely until it solidifies.",
+        "Heat oven to 375 F. In a large mixing bowl combine butter bacon fat and sugars. Cream until fluffy.",
+        "Add eggs and baking soda. Mix well.",
+        "Mix in vanilla.",
+        "Add flour.",
+        "Mix until flour is mostly incorporated.",
+        "Crumble your bacon.",
+        "Stir in bacon and chocolate chips.",
+        "Drop by rounded scoops onto a parchment lined baking sheet.",
+        "Bake at 375 F for about 8 minutes. Allow to cool for a few minutes on the sheet."
+      ]
+    },
+    {
+      "Name": ""
+    }
+  ]
+}

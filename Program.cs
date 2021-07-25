@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace recipe_book
 {
@@ -9,14 +10,8 @@ namespace recipe_book
             bool isActive = true;
 
             while(isActive)
-            { 
-                Console.WriteLine("Hello and Welcome to THE Recipe Book Console App!");
-                Console.WriteLine("");
-                Console.WriteLine("Please slect one of the following menu items:");
-                Console.WriteLine("1.) List all available recipes");
-                Console.WriteLine("2.) Search for a specific recipe name");
-                Console.WriteLine("3.) Conversion Tool");
-                Console.Write("Enter Selection: ");
+            {
+                DisplayMainMenu();
                 string userInput = Console.ReadLine();
 
                 Console.WriteLine($"Your input: {userInput}");
@@ -28,6 +23,24 @@ namespace recipe_book
                 }
 
             }
+        }
+
+        public static void DisplayMainMenu()
+        {
+            string currentDirectory = Directory.GetCurrentDirectory();
+            DirectoryInfo directory = new DirectoryInfo(currentDirectory);
+            var fileName = Path.Combine(directory.FullName, "mainMenu.txt");
+
+            using (var reader = new StreamReader(fileName))
+            {
+                string ln;
+
+                while ((ln = reader.ReadLine()) != null)
+                {
+                    Console.WriteLine(ln);
+                }
+            }
+
         }
     }
 }
