@@ -27,6 +27,7 @@ namespace recipe_book
 
         public static void DisplayMainMenu()
         {
+            //Getting working directory and getting the path for the mainMenu.txt
             string currentDirectory = Directory.GetCurrentDirectory();
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
             var fileName = Path.Combine(directory.FullName, "mainMenu.txt");
@@ -34,7 +35,7 @@ namespace recipe_book
             using (var reader = new StreamReader(fileName))
             {
                 string ln;
-
+                //Loop through the txt and print out the txt line by line until there is nothing left in the file
                 while ((ln = reader.ReadLine()) != null)
                 {
                     Console.WriteLine(ln);
