@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "L+kISbOfm/ja//LqupDUzA2snaOv8kxmzhe7yuy7vrMj6z0m9P6kUw9ELSLDx1yhtTZ5doid1EflAnal0yhPAg==",
+  "dgSpecHash": "wDTP8crAvmrR+FqPveCrvE2R4SGPRmAbBsmlpaoQqHifrXVU3icU9c3meK0hzN00Mj9KU85n+o1Fr7R3kIEn2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Todd\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

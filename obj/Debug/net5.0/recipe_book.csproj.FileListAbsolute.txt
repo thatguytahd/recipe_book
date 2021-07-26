@@ -30,3 +30,8 @@ C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\obj\Debug\net5.0\recipe
 C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\obj\Debug\net5.0\ref\recipe_book.dll
 C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.pdb
 C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.genruntimeconfig.cache
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\bin\Debug\net5.0\mainMenu.txt
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\bin\Debug\net5.0\Recipes.cs
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.csproj.CopyComplete
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\bin\Debug\net5.0\recipes.json

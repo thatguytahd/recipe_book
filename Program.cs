@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace recipe_book
@@ -21,16 +23,28 @@ namespace recipe_book
                     Console.WriteLine("Closing App... Goodbye!");
                     isActive = false;
                 }
+                else if (userInput == "1")
+                {
+                    Console.WriteLine("All Recipe Names:");
+                    ListRecipeNames();
+                }
 
             }
         }
 
-        public static void DisplayMainMenu()
+        public static string GetFullFilePath(string name)
         {
             //Getting working directory and getting the path for the mainMenu.txt
             string currentDirectory = Directory.GetCurrentDirectory();
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
-            var fileName = Path.Combine(directory.FullName, "mainMenu.txt");
+            var filePath = Path.Combine(directory.FullName, name);
+
+            return filePath;
+        }
+
+        public static void DisplayMainMenu()
+        {
+            var fileName = GetFullFilePath("mainMenu.txt");
 
             using (var reader = new StreamReader(fileName))
             {
@@ -40,6 +54,32 @@ namespace recipe_book
                 {
                     Console.WriteLine(ln);
                 }
+            }
+
+        }
+
+        public static List<Recipe> DeserializeRecipe()
+        {
+            var fileName = GetFullFilePath("recipes.json");
+            var recipes = new List<Recipe>();
+            var serializer = new JsonSerializer();
+            using (var reader = new StreamReader(fileName))
+            using (var jsonReader = new JsonTextReader(reader))
+            {
+                recipes = serializer.Deserialize<List<Recipe>>(jsonReader);
+            }
+
+            return recipes;
+        }
+
+        public static void ListRecipeNames()
+        {
+            List<Recipe> recipes = new List<Recipe>(); 
+            recipes = DeserializeRecipe();
+
+            foreach (var recipe in recipes)
+            {
+                Console.WriteLine(recipe.Name);
             }
 
         }
