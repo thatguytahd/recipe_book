@@ -11,30 +11,15 @@ namespace recipe_book
         {
             bool isActive = true;
 
-            while(isActive)
+            while (isActive)
             {
-                DisplayMainMenu();
-                string userInput = Console.ReadLine();
-
-                Console.WriteLine($"Your input: {userInput}");
-
-                if (userInput.ToLower() == "quit")
-                {
-                    Console.WriteLine("Closing App... Goodbye!");
-                    isActive = false;
-                }
-                else if (userInput == "1")
-                {
-                    Console.WriteLine("All Recipe Names:");
-                    ListRecipeNames();
-                }
-
+                isActive = MainMenu();
             }
         }
 
         public static string GetFullFilePath(string name)
         {
-            //Getting working directory and getting the path for the mainMenu.txt
+            //Getting working directory for the desired filename in the method's parameter
             string currentDirectory = Directory.GetCurrentDirectory();
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
             var filePath = Path.Combine(directory.FullName, name);
@@ -42,9 +27,9 @@ namespace recipe_book
             return filePath;
         }
 
-        public static void DisplayMainMenu()
+        public static void DisplayMainMenuTxt()
         {
-            var fileName = GetFullFilePath("mainMenu.txt");
+            var fileName = GetFullFilePath("mainMenu.txt"); //Getting full filepath of txt file for the menu
 
             using (var reader = new StreamReader(fileName))
             {
@@ -55,7 +40,57 @@ namespace recipe_book
                     Console.WriteLine(ln);
                 }
             }
+        }
 
+        //Method to run the display menu txt method and contain the switch case for the main menu
+        public static bool MainMenu()
+        {
+            Console.Clear();
+            DisplayMainMenuTxt();
+            string userInput = Console.ReadLine();
+
+            switch (userInput)
+            {
+                case "1":
+                    bool firstOption = true;
+                    while (firstOption)
+                    {
+                        Console.Clear();
+                        ListRecipeNames();
+
+                        Console.WriteLine("\nEnter 1 to go back to main menu!");
+                        Console.Write("User Entry: ");
+                        var backOut = Console.ReadLine();
+                        if (backOut == "1")
+                        {
+                            firstOption = false;
+                        }
+                    }
+                    return true;
+                case "2":
+                    bool secondOption = true;
+                    while (secondOption)
+                    {
+                        Console.Clear();
+                        //ListRecipeNames();
+                        Console.WriteLine("Enter name of recipe you would like to search for: ");//placeholer
+                        Console.WriteLine("\nEnter 1 to go back to main menu!");
+                        Console.Write("User Entry: ");
+                        var backOut = Console.ReadLine();
+                        if (backOut == "1")
+                        {
+                            secondOption = false;
+                        }
+                    }
+                    return true;
+                case "3":
+                    return true;
+                case "4":
+                    Console.WriteLine("Good Bye!");
+                    return false;
+                default:
+                    return true;
+            }
         }
 
         public static List<Recipe> DeserializeRecipe()
@@ -82,6 +117,28 @@ namespace recipe_book
                 Console.WriteLine(recipe.Name);
             }
 
+        }
+
+        public static void SearchRecipeName(string searchInput)
+        {
+            List<Recipe> recipes = new List<Recipe>();
+            recipes = DeserializeRecipe();
+
+            foreach (var recipe in recipes)
+            {
+                if (recipe.Name == searchInput)
+                {
+                    //do something
+                    Console.WriteLine(recipe.Name);
+                    Console.WriteLine(recipe.Ingredients);
+                    Console.WriteLine(recipe.Steps);
+                }
+                else
+                {
+                    Console.WriteLine("No Match Found");
+                    break;
+                }
+            }
         }
     }
 }

@@ -4,7 +4,6 @@ Please select one fo the following menu items:
 1.) List all available recipes
 2.) Search for a sepcific recipe name
 3.) Conversion Tool
+4.) Exit
 -----
-Enter "quit" to exit application.
----
 Enter Selection: 

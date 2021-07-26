@@ -35,3 +35,4 @@ C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\bin\Debug\net5.0\Recipe
 C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\obj\Debug\net5.0\recipe_book.csproj.CopyComplete
 C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\bin\Debug\net5.0\recipes.json
+C:\Users\Todd\Documents\Projects\recipe_book\recipe_book\bin\Debug\net5.0\README.md
