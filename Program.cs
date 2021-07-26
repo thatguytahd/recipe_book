@@ -19,7 +19,7 @@ namespace recipe_book
 
         public static string GetFullFilePath(string name)
         {
-            //Getting working directory for the desired filename in the method's parameter
+            //Getting working directory for the desired filename in the method's parameter in order to keep thing DRY
             string currentDirectory = Directory.GetCurrentDirectory();
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
             var filePath = Path.Combine(directory.FullName, name);
@@ -73,7 +73,9 @@ namespace recipe_book
                     {
                         Console.Clear();
                         //ListRecipeNames();
-                        Console.WriteLine("Enter name of recipe you would like to search for: ");//placeholer
+                        Console.WriteLine("Enter name of recipe you would like to search for: ");
+                        var searchInput = Console.ReadLine();
+                        SearchRecipeName(searchInput);
                         Console.WriteLine("\nEnter 1 to go back to main menu!");
                         Console.Write("User Entry: ");
                         var backOut = Console.ReadLine();
@@ -123,19 +125,37 @@ namespace recipe_book
         {
             List<Recipe> recipes = new List<Recipe>();
             recipes = DeserializeRecipe();
+            string recipeName;
 
             foreach (var recipe in recipes)
             {
-                if (recipe.Name == searchInput)
+                recipeName = recipe.Name;
+
+                if (recipeName.ToLower() == searchInput.ToLower()) // Setting both the recipe name and the search input to lower case to prevent case sensitive issues.
                 {
-                    //do something
+                    Console.Clear();
+                    Console.WriteLine("The recipe you have chosen:");
                     Console.WriteLine(recipe.Name);
-                    Console.WriteLine(recipe.Ingredients);
-                    Console.WriteLine(recipe.Steps);
+                    Console.WriteLine("\n\t---- Ingredients ----");
+                    Ingredient[] recipeIngredients = recipe.Ingredients;
+                    foreach (var ingredient in recipeIngredients)
+                    {
+                        Console.WriteLine($"\tQuantity: {ingredient.Quantity}");
+                        Console.WriteLine($"\tIngredient: {ingredient.Name}");
+                    }
+                    Console.WriteLine("\n\t---- Steps ----");
+                    string[] recipeSteps = recipe.Steps;
+                    int stepCounter = 1;
+                    foreach (var step in recipeSteps)
+                    {
+                        Console.WriteLine($"\tStep {stepCounter}: {step}");
+                        stepCounter++;
+                    }
+                    break;
                 }
                 else
                 {
-                    Console.WriteLine("No Match Found");
+                    Console.WriteLine("Invalid Search!");
                     break;
                 }
             }
