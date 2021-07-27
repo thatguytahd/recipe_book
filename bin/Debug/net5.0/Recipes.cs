@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace recipe_book
 {
-
     public class Rootobject
     {
         public Recipe[] Recipe { get; set; }
@@ -24,5 +23,4 @@ namespace recipe_book
         public string Quantity { get; set; }
         public string Name { get; set; }
     }
-
 }

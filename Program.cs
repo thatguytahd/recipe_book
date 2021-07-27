@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace recipe_book
 {
@@ -75,7 +76,8 @@ namespace recipe_book
                         Console.WriteLine("Enter name of recipe you would like to search for: ");
                         var searchInput = Console.ReadLine();
                         SearchRecipeName(searchInput);
-                        Console.WriteLine("\nEnter 1 to go back to main menu!");
+                        Console.WriteLine("\nPress Enter to search for another recipe.");
+                        Console.WriteLine("Enter 1 to go back to main menu!");
                         Console.Write("User Entry: ");
                         var backOut = Console.ReadLine();
                         if (backOut == "1")
@@ -87,13 +89,12 @@ namespace recipe_book
                 case "3":
                     return true;
                 case "4":
-                    Console.WriteLine("Good Bye!");
+                    Console.WriteLine("Exiting App....Good Bye!");
                     return false;
                 default:
                     return true;
             }
         }
-
         public static List<Recipe> DeserializeRecipe()
         {
             var fileName = GetFullFilePath("recipes.json");
@@ -124,37 +125,42 @@ namespace recipe_book
         {
             List<Recipe> recipes = new List<Recipe>();
             recipes = DeserializeRecipe();
-            
 
-            foreach (var recipe in recipes)
+            bool checkIfListContains = recipes.Any(p => p.Name == searchInput.ToLower()); // Boolean variable to hold if the searchInput exists within the list of Recipe objects
+            
+            if (checkIfListContains == true) //First check if the searchInput is contained within the recipes list and if not print out Invalid Search
             {
-                if (searchInput.ToLower() == recipe.Name.ToLower()) // Setting both the recipe name and the search input to lower case to prevent case sensitive issues.
+                foreach (var recipe in recipes)
                 {
-                    Console.Clear();
-                    Console.WriteLine("The recipe you have chosen:");
-                    Console.WriteLine(recipe.Name);
-                    Console.WriteLine("\n\t---- Ingredients ----");
-                    Ingredient[] recipeIngredients = recipe.Ingredients;
-                    foreach (var ingredient in recipeIngredients)
+                    if (searchInput.ToLower() == recipe.Name)
                     {
-                        Console.WriteLine($"\tQuantity: {ingredient.Quantity}");
-                        Console.WriteLine($"\tIngredient: {ingredient.Name}");
+                        Console.Clear();
+                        Console.WriteLine("The recipe you have chosen:");
+                        Console.WriteLine(recipe.Name);
+                        Console.WriteLine("\n\t---- Ingredients ----");
+                        Ingredient[] recipeIngredients = recipe.Ingredients;
+                        foreach (var ingredient in recipeIngredients)
+                        {
+                            Console.WriteLine($"\tQuantity: {ingredient.Quantity}");
+                            Console.WriteLine($"\tIngredient: {ingredient.Name}");
+                        }
+                        Console.WriteLine("\n\t---- Steps ----");
+                        string[] recipeSteps = recipe.Steps;
+                        int stepCounter = 1;
+                        foreach (var step in recipeSteps)
+                        {
+                            Console.WriteLine($"\tStep {stepCounter}: {step}");
+                            stepCounter++;
+                        }
+                        break;
                     }
-                    Console.WriteLine("\n\t---- Steps ----");
-                    string[] recipeSteps = recipe.Steps;
-                    int stepCounter = 1;
-                    foreach (var step in recipeSteps)
-                    {
-                        Console.WriteLine($"\tStep {stepCounter}: {step}");
-                        stepCounter++;
-                    }
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid Search");
                 }
             }
+            else
+            {
+                Console.WriteLine($"{searchInput} does not exist in the Recipe Book, please try again!");
+            }
+            
         }
     }
 }
