@@ -2,50 +2,50 @@
   {
     "Name": "Bacon Chocolate Chip Cookies",
     "Ingredients": [
-        {
-          "Quantity": "3/4 Cup",
-          "Name": "Softened Butter"
-        },
-        {
-          "Quantity": "1/4 Cup",
-          "Name": "Bacon Fat"
-        },
-        {
-          "Quantity": "1 Cup",
-          "Name": "Packed Brown Sugar"
-        },
-        {
-          "Quantity": "1/2 Cup",
-          "Name": "Sugar"
-        },
-        {
-          "Quantity": "2",
-          "Name": "Eggs"
-        },
-        {
-          "Quantity": "1 Teaspoon",
-          "Name": "Vanilla Extract"
-        },
-        {
-          "Quantity": "1 Teaspoon",
-          "Name": "Baking Soda"
-        },
-        {
-          "Quantity": "2 1/4 Cups",
-          "Name": "Flour"
-        },
-        {
-          "Quantity": "1 Cup",
-          "Name": "Semi-Sweet Chocolate Chips"
-        },
-        {
-          "Quantity": "1/2 Cup",
-          "Name": "Milk Chocolate Chips"
-        },
-        {
-          "Quantity": "8-10 Ounces",
-          "Name": "Bacon"
-        }
+      {
+        "Quantity": "3/4 Cup",
+        "Name": "Softened Butter"
+      },
+      {
+        "Quantity": "1/4 Cup",
+        "Name": "Bacon Fat"
+      },
+      {
+        "Quantity": "1 Cup",
+        "Name": "Packed Brown Sugar"
+      },
+      {
+        "Quantity": "1/2 Cup",
+        "Name": "Sugar"
+      },
+      {
+        "Quantity": "2",
+        "Name": "Eggs"
+      },
+      {
+        "Quantity": "1 Teaspoon",
+        "Name": "Vanilla Extract"
+      },
+      {
+        "Quantity": "1 Teaspoon",
+        "Name": "Baking Soda"
+      },
+      {
+        "Quantity": "2 1/4 Cups",
+        "Name": "Flour"
+      },
+      {
+        "Quantity": "1 Cup",
+        "Name": "Semi-Sweet Chocolate Chips"
+      },
+      {
+        "Quantity": "1/2 Cup",
+        "Name": "Milk Chocolate Chips"
+      },
+      {
+        "Quantity": "8-10 Ounces",
+        "Name": "Bacon"
+      }
     ],
     "Steps": [
       "First you have to cook your bacon until it's crispy.",
@@ -62,6 +62,95 @@
     ]
   },
   {
-    "Name": "Prime Rip Roast"
+    "Name": "French Omelet",
+    "Ingredients": [
+      {
+        "Quantity": "2",
+        "Name": "Large Eggs"
+      },
+      {
+        "Quantity": "2 Tablespoons",
+        "Name": "Milk"
+      },
+      {
+        "Quantity": "1 Pinch",
+        "Name": "Kosher Salt"
+      },
+      {
+        "Quantity": "1 Pinch",
+        "Name": "Ground Black Pepper"
+      },
+      {
+        "Quantity": "1 Tablespoon",
+        "Name": "Unsalted Butter"
+      }
+    ],
+    "Steps": [
+      "Combine the eggs, milk, salk, and pepper in a medium bowl and mix well until egg whites and the yolk are well incorporated",
+      "Heat a small (about 6 inches) seasoned omelet pan or non-stick skillet over medium-high heat. When the pan is warm, add the butter (it should sizzle gently). When the butter stops sizzling and the foam subsides add the eggs.",
+      "Pause to let the eggs heat slightly and then stir vigorously, with a heatproof spatula, making sure you include the sides of the egg mixture occasionally so the omelet cooks evenly.",
+      "Once the eggs are just set, bang the pan gently on the burner to release the omelet from the pan.  Check to see that it is not sticking to the sides or bottom of the pan, if so release the omelet with a heat proof spatula.",
+      "Hold the pan at a 45-degree angle to the stove and carefully fold the omelet like a business letter. Cook just until the desired degree of doneness lifting the pan or reducing the heat to prevent browning.",
+      "Transfer to a warm plate and serve.",
+      "Season with your choice of fresh herbs, salt, pepper, etc."
+    ]
+  },
+  {
+    "Name": "Apple Pie",
+    "Ingredients": [
+      {
+        "Quantity": "1/2 Cup",
+        "Name": "Sugar"
+      },
+      {
+        "Quantity": "1/2 Cup",
+        "Name": "Packed Brown Sugar"
+      },
+      {
+        "Quantity": "3 Tablespoons",
+        "Name": "All-Purpose Flour"
+      },
+      {
+        "Quantity": "1 Teaspoon",
+        "Name": "Ground Cinnamon"
+      },
+      {
+        "Quantity": "1/4 Teaspoon",
+        "Name": "Ground Ginger"
+      },
+      {
+        "Quantity": "1/4 Teaspoon",
+        "Name": "Ground Nutmeg"
+      },
+      {
+        "Quantity": "6-7 Cups",
+        "Name": "Thinly Sliced peeled tart apples"
+      },
+      {
+        "Quantity": "1 Tablespoon",
+        "Name": "Lemon Juice"
+      },
+      {
+        "Quantity": "2 Double Portions",
+        "Name": "Dough for double-crust pie"
+      },
+      {
+        "Quantity": "1 Tablespoon",
+        "Name": "Butter"
+      },
+      {
+        "Quantity": "1",
+        "Name": "Large Egg White"
+      }
+    ],
+    "Steps": [
+      "Preheat oven to 375°. In a small bowl, combine sugars, flour and spices; set aside. In a large bowl, toss apples with lemon juice. Add sugar mixture; toss to coat.",
+      "On a lightly floured surface, roll one half of dough to a 1/8-in.-thick circle; transfer to a 9-in. pie plate. Trim even with rim",
+      "Add filling; dot with butter",
+      "Roll remaining dough to a 1/8-in.-thick circle. Place over filling. Trim, seal and flute edge.",
+      "Cut slits in top.",
+      "Beat egg white until foamy; brush over crust. Sprinkle with sugar. Cover edge loosely with foil.",
+      "Bake 25 minutes. Remove foil; bake until crust is golden brown and filling is bubbly, 20-25 minutes longer. Cool on a wire rack."
+    ]
   }
 ]

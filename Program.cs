@@ -125,13 +125,10 @@ namespace recipe_book
         {
             List<Recipe> recipes = new List<Recipe>();
             recipes = DeserializeRecipe();
-            string recipeName;
-
+            
             foreach (var recipe in recipes)
             {
-                recipeName = recipe.Name;
-
-                if (recipeName.ToLower() == searchInput.ToLower()) // Setting both the recipe name and the search input to lower case to prevent case sensitive issues.
+                if (searchInput.ToLower() == recipe.Name.ToLower()) // Setting both the recipe name and the search input to lower case to prevent case sensitive issues.
                 {
                     Console.Clear();
                     Console.WriteLine("The recipe you have chosen:");
