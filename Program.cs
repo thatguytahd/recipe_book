@@ -72,7 +72,6 @@ namespace recipe_book
                     while (secondOption)
                     {
                         Console.Clear();
-                        //ListRecipeNames();
                         Console.WriteLine("Enter name of recipe you would like to search for: ");
                         var searchInput = Console.ReadLine();
                         SearchRecipeName(searchInput);
@@ -126,6 +125,7 @@ namespace recipe_book
             List<Recipe> recipes = new List<Recipe>();
             recipes = DeserializeRecipe();
             
+
             foreach (var recipe in recipes)
             {
                 if (searchInput.ToLower() == recipe.Name.ToLower()) // Setting both the recipe name and the search input to lower case to prevent case sensitive issues.
@@ -152,8 +152,7 @@ namespace recipe_book
                 }
                 else
                 {
-                    Console.WriteLine("Invalid Search!");
-                    break;
+                    Console.WriteLine("Invalid Search");
                 }
             }
         }
