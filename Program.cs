@@ -52,7 +52,7 @@ namespace recipe_book
 
             switch (userInput)
             {
-                case "1":
+                case "1": // Option to list all recipes in the recipes.json
                     bool firstOption = true;
                     while (firstOption)
                     {
@@ -68,7 +68,7 @@ namespace recipe_book
                         }
                     }
                     return true;
-                case "2":
+                case "2": // Option to search for a specific recipe (it is not case scpeific but needs to match the name of recipe that exists in the json)
                     bool secondOption = true;
                     while (secondOption)
                     {
@@ -86,7 +86,7 @@ namespace recipe_book
                         }
                     }
                     return true;
-                case "3":
+                case "3": // Unit Conversion Tool for converting certain measuring units to a different measuring unit
                     bool thirdOption = true;
                     while (thirdOption)
                     {
@@ -111,7 +111,7 @@ namespace recipe_book
                         }
                     }
                     return true;
-                case "4":
+                case "4": // Option to quit out of the loop and close the program
                     Console.WriteLine("Exiting App....Good Bye!");
                     return false;
                 default:
