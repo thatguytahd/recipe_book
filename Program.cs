@@ -14,7 +14,7 @@ namespace recipe_book
 
             while (isActive)
             {
-                isActive = MainMenu();
+                isActive = MainMenu(); // starts the show!
             }
         }
 
@@ -57,7 +57,7 @@ namespace recipe_book
                     while (firstOption)
                     {
                         Console.Clear();
-                        ListRecipeNames();
+                        Recipe.ListRecipeNames();
 
                         Console.WriteLine("\nEnter 1 to go back to main menu!");
                         Console.Write("User Entry: ");
@@ -75,7 +75,7 @@ namespace recipe_book
                         Console.Clear();
                         Console.WriteLine("Enter name of recipe you would like to search for: ");
                         var searchInput = Console.ReadLine();
-                        SearchRecipeName(searchInput);
+                        Recipe.SearchRecipeName(searchInput);
                         Console.WriteLine("\nPress Enter to search for another recipe.");
                         Console.WriteLine("Enter 1 to go back to main menu!");
                         Console.Write("User Entry: ");
@@ -118,73 +118,6 @@ namespace recipe_book
                     return true;
             }
         }
-        public static List<Recipe> DeserializeRecipe()
-        {
-            var fileName = GetFullFilePath("recipes.json");
-            var recipes = new List<Recipe>();
-            var serializer = new JsonSerializer();
-            using (var reader = new StreamReader(fileName))
-            using (var jsonReader = new JsonTextReader(reader))
-            {
-                recipes = serializer.Deserialize<List<Recipe>>(jsonReader);
-            }
-
-            return recipes;
-        }
-
-        public static void ListRecipeNames()
-        {
-            var recipes = new List<Recipe>(); 
-            recipes = DeserializeRecipe();
-            int counter = 1;
-
-            foreach (var recipe in recipes)
-            {
-                Console.WriteLine($"{counter}.) {recipe.Name}");
-                counter++;
-            }
-
-        }
-
-        public static void SearchRecipeName(string searchInput)
-        {
-            var recipes = new List<Recipe>();
-            recipes = DeserializeRecipe();
-
-            bool checkIfListContains = recipes.Any(p => p.Name.ToLower() == searchInput.ToLower()); // Boolean variable to hold if the searchInput exists within the list of Recipe objects using some LINQ magic
-            
-            if (checkIfListContains == true) //First check if the searchInput is contained within the recipes list and if not print out Invalid Search
-            {
-                foreach (var recipe in recipes)
-                {
-                    if (searchInput.ToLower() == recipe.Name.ToLower())
-                    {
-                        Console.Clear();
-                        Console.WriteLine("The recipe you have chosen:");
-                        Console.WriteLine(recipe.Name);
-                        Console.WriteLine("\n\t---- Ingredients ----");
-                        Ingredient[] recipeIngredients = recipe.Ingredients;
-                        foreach (var ingredient in recipeIngredients)
-                        {
-                            Console.WriteLine($"\tQuantity: {ingredient.Quantity}");
-                            Console.WriteLine($"\tIngredient: {ingredient.Name}");
-                        }
-                        Console.WriteLine("\n\t---- Steps ----");
-                        string[] recipeSteps = recipe.Steps;
-                        int stepCounter = 1;
-                        foreach (var step in recipeSteps)
-                        {
-                            Console.WriteLine($"\tStep {stepCounter}: {step}");
-                            stepCounter++;
-                        }
-                        break;
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine($"{searchInput} does not exist in the Recipe Book, please try again!");
-            }
-        }
+        
     }
 }
