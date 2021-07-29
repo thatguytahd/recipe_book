@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IZsn8kM1HSXrm2MmC7seO6s4LtFbNsCvwNJSpPCsZdYqXwdmqKXcdvvDsVHTf9h0w21NpTK0EZatnWhQB9ZzXw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Todd\\Documents\\Projects\\recipe_book\\recipe_book\\recipe_book.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Todd\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Todd\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\5.0.7\\microsoft.netcore.app.runtime.win-x86.5.0.7.nupkg.sha512",
+    "C:\\Users\\Todd\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\5.0.7\\microsoft.windowsdesktop.app.runtime.win-x86.5.0.7.nupkg.sha512",
+    "C:\\Users\\Todd\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\5.0.7\\microsoft.aspnetcore.app.runtime.win-x86.5.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
