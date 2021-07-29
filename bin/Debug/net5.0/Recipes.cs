@@ -55,7 +55,7 @@ namespace recipe_book
             var recipes = new List<Recipe>();
             recipes = DeserializeRecipe();
 
-            bool checkIfListContains = recipes.Any(p => p.Name.ToLower() == searchInput.ToLower()); // Boolean variable to hold if the searchInput exists within the list of Recipe objects using some LINQ magic
+            bool checkIfListContains = recipes.Any(r => r.Name.ToLower() == searchInput.ToLower()); // Boolean variable to hold if the searchInput exists within the list of Recipe objects using some LINQ magic
 
             if (checkIfListContains == true) //First check if the searchInput is contained within the recipes list and if not print out Invalid Search
             {
