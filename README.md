@@ -26,4 +26,8 @@ option or quit the app.
 
 ### **Instructions for running the project**
 
-After cloning the repo you will want to open the solution file (.sln) in Visual Studio and CTRL + F5 to run the program.
+Two options for running the program:
+
+1.) After cloning the repo you will want to open the solution file (.sln) in Visual Studio and CTRL + F5 to run the program.
+
+2.) Also I did publish the solution to the bin/release/net5.0/publish folder and once you download/clone the repo you should also be able to run the recipe_book.exe from there as well.
